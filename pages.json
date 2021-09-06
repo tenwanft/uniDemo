@@ -1,0 +1,86 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	    {
+            "path" : "pages/first/first",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				 "app-plus": {
+				                    "pullToRefresh": {
+				                        "support": true,
+				                        "color": "#ff3333",
+				                        "style": "default",
+				                        "contentdown": {
+				                            "caption": "下拉可刷新自定义文本"
+				                        },
+				                        "contentover": {
+				                            "caption": "释放可刷新自定义文本"
+				                        },
+				                        "contentrefresh": {
+				                            "caption": "正在刷新自定义文本"
+				                        }
+				                    }
+				             }
+				            
+            }
+            
+        }
+        ,{
+            "path" : "pages/second/second",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"subPackages": [{
+	    "root": "components",
+	    "pages": [{
+	        "path": "first/listDetail",
+			"style":{
+				"navigationBarTitleText":"詳情"
+			}
+			
+	    }]
+	}],
+	
+	"tabBar":{
+		"selectedColor":"#d81e06",
+		"list":[{
+			"pagePath":"pages/first/first",
+			"iconPath":"static/xq.png",
+			"selectedIconPath":"static/xqselect.png",
+			"text":"首页"
+		},
+		{
+			"pagePath":"pages/second/second",
+			"iconPath":"static/UFO.png",
+			"selectedIconPath":"static/ufoselected.png",
+			"text":"home"
+		},{
+			"pagePath":"pages/my/my",
+			"iconPath":"static/person.png",
+			"selectedIconPath":"static/selectedPerson.png",
+			"text":"我的"
+		}
+		]
+	}
+}
